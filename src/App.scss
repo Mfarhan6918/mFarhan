@@ -1,0 +1,18 @@
+.App{
+    height: 100%;
+    
+    &__main-page-content{
+        height: calc(100% - 80px);
+        overflow-x: hidden;
+    }
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    width: 1rem;
+  }
+  ::-webkit-scrollbar-track{
+    background: #990033;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #f99983;
+  }
