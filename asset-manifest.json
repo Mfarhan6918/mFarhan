@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/mFarhan/static/css/main.fd039027.css",
+    "main.js": "/mFarhan/static/js/main.a183dbfc.js",
+    "static/media/Image4.png": "/mFarhan/static/media/Image4.d600797d488ca1316454.png",
+    "static/media/logo.png": "/mFarhan/static/media/logo.1589754dfa25ea3b2f2b.png",
+    "static/media/image2.png": "/mFarhan/static/media/image2.3239322633f817bf232c.png",
+    "static/media/image1.png": "/mFarhan/static/media/image1.d30684d05e9918d9594b.png",
+    "static/media/image5.jpeg": "/mFarhan/static/media/image5.8fe75ae059716afac60d.jpeg",
+    "static/media/image3.png": "/mFarhan/static/media/image3.146a26471134e341e841.png",
+    "index.html": "/mFarhan/index.html",
+    "main.fd039027.css.map": "/mFarhan/static/css/main.fd039027.css.map",
+    "main.a183dbfc.js.map": "/mFarhan/static/js/main.a183dbfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd039027.css",
+    "static/js/main.a183dbfc.js"
+  ]
+}
