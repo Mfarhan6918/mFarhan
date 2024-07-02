@@ -37,7 +37,7 @@ const portfolioData = [
     id: 3,
     Name: "Netflix Clone",
     image: ImageFive,
-    link: "https://mfarhan6918.github.io/netflix_Clone/",
+    link: "https://netflex-clone-wheat.vercel.app/",
   },
 ];
 
