@@ -29,7 +29,7 @@ const personalDetails = [
     value: "+92-304-7167688",
   },
 ];
-const jobSummary = `Seasoned and independent Front End Developer with 8-months of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design. It is imperative that we provide a thorough and professional approach to your resume. As a Front End Developer we'll be judged by your ability to use UX and UI concepts and follow design guideline. It's about expressing your attention to detail and how we can help implement design ideas for your future employer. `;
+const jobSummary = `Seasoned and independent Front End Developer with five years of experience in blending the art of design with the skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. I am very passionate about aesthetics and UI design. We must provide a thorough and professional approach to your resume. As a Front End Developer, we'll be judged by your ability to use UX and UI concepts and follow design guidelines. It's about expressing your attention to detail and how we can help implement design ideas for your future employer. `;
 
 const About = () => {
   return (
