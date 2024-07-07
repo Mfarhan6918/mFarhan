@@ -34,22 +34,30 @@ const Contact = () => {
           }}
           end={{
             transform: "translateX(0)",
-          }}
-        >
+          }}>
+            
           <div className="contact__content__form">
             <div className="contact__content__form__controlswrapper">
               <div className="nameWrapper">
                 <input required type={"text"} name="name" className="inputName" />
-                <label htmlFor="name" className="nameLable">Name</label>
+                <label htmlFor="name" className="nameLable">Company Name</label>
+              </div>
+              <div className="countryWrapper">
+                <input required type={"email"} name="email" className="inputCountry" />
+                <label htmlFor="email" className="countryLable">Country</label>
+              </div>
+              <div className="cityWrapper">
+                <input required type={"email"} name="email" className="inputCity" />
+                <label htmlFor="email" className="cityLable">City</label>
               </div>
               <div className="emailWrapper">
                 <input required type={"email"} name="email" className="inputEmail" />
                 <label htmlFor="email" className="emailLable">Email</label>
               </div>
-              <div className="descriptionWrapper">
+            </div>
+            <div className="descriptionWrapper">
                 <textarea rows="5" required name="description" className="inputDescription"/>
                 <label htmlFor="description" className="descriptionLable">Description</label>
-              </div>
             </div>
             <a href="#" className="btn">Submit</a>
           </div>

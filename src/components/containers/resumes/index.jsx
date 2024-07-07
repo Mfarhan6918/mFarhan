@@ -18,7 +18,7 @@ const Resumes = () => {
           <h3 className="timeline__experience__header-text">Experience</h3>
           <VerticalTimeline
             layout={"1-column"}
-            lineColor="var(--yellow-theme-main-color)">
+            lineColor="#088395">
             {data.experience.map((item, i) => (
               <VerticalTimelineElement
                 key={i}
@@ -26,14 +26,14 @@ const Resumes = () => {
                 contentStyle={{
                   background: "none",
                   color: "var(--yellow-theme-sub-text-color)",
-                  border: "1.5px solid var(--yellow-theme-main-color)",
+                  border: "1.5px solid #088395",
                 }}
                 // date="2023 - Present"
                 icon={<MdWork/>}
                 iconStyle={{
-                  background:"#181818",
-                  color: "var(--yellow-theme-sub-text-color)",
-                  border: "1.5px solid var(--yellow-theme-main-color)",
+                  background:"rgb(0 72 83)",
+                  color: "#37b7c3",
+                  border: "1.5px solid #088395",
                 }}>
                 <div className="vertical-timeline-element-title-wrapper">
                   <h3>
@@ -44,7 +44,7 @@ const Resumes = () => {
                   </h4>
                 </div>
                   <p className="vertical-timeline-element-title-wrapper-description">{item.description}</p>
-                  <h1 style={{marginTop:"1.7rem"}}>{item.date}</h1>
+                  <h1 className="vertical-timeline-element-title-wrapper-heading1" style={{marginTop:"1.7rem"}}>{item.date}</h1>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
@@ -53,7 +53,7 @@ const Resumes = () => {
           <h3 className="timeline__education__header-text">Education</h3>
           <VerticalTimeline
             layout={"1-column"}
-            lineColor="var(--yellow-theme-main-color)">
+            lineColor="#088395">
             {data.education.map((item, i) => (
               <VerticalTimelineElement
                 key={i}
@@ -61,14 +61,14 @@ const Resumes = () => {
                 contentStyle={{
                   background: "none",
                   color: "var(--yellow-theme-sub-text-color)",
-                  border: "1.5px solid var(--yellow-theme-main-color)",
-                  border: "1.5px solid var(--yellow-theme-main-color)",
+                  border: "1.5px solid #088395",
+                  border: "1.5px solid #088395",
                 }}
                 // date="2023 - Present"
                 icon={<MdWork/>}
                 iconStyle={{
-                  background:"#181818",
-                  color: "var(--yellow-theme-sub-text-color)",
+                  background:"rgb(0 72 83)",
+                  color: "#37b7c3",
                   border: "1.5px solid var(--yellow-theme-main-color)",
                 }}>
                 <div className="vertical-timeline-element-title-wrapper">
@@ -80,7 +80,7 @@ const Resumes = () => {
                   </h4>
                 </div>
                   <p className="vertical-timeline-element-title-wrapper-description">{item.description}</p>
-                  <h1 style={{marginTop:"1.7rem"}}>{item.date}</h1>
+                  <h1 clas style={{marginTop:"1.7rem"}}>{item.date}</h1>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>

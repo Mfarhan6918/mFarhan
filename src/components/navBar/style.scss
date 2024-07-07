@@ -1,29 +1,29 @@
 .navbar {
   background-color: var(--yellow-theme-nav-background-color);
-  // height: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  padding:5px;
+  box-shadow: 0 0px 2px 0 #0e2d7bb6, 0 0px 2px 0 #0e2d7bb6;
 
   &__container {
     display: flex;
     align-items: center;
     width: 100%;
     height: inherit;
-    padding: 0 20px;
+    padding: 10px 20px;
     flex: 1;
 
     &__logo {
       color: var(--yellow-theme-main-color);
       cursor: pointer;
-      width: 75px;
-      height: 78px;
+      width: 65px;
+      height: 65px;
       object-fit: cover;
       border-radius: 100%;
       overflow: hidden;
-      background-color: #83313b;
+      background-color:#088395;
     }
     &__menu {
       display: flex;
@@ -52,6 +52,10 @@
           color: var(--yellow-theme-main-color);
           text-decoration: none;
           padding: 0.5rem;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
+          font-style: normal;
         }
       }
     }

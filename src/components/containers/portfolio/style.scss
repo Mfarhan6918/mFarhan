@@ -4,30 +4,32 @@
     width: 100%;
 
     &__filter {
-      display: inline-block;
+      display: inline-flex;
       margin: 0 auto;
       border-radius: 25px;
-      border: 1px dashed var(--yellow-theme-main-color);
+      border: 1px dashed #37b7c3;
 
       li {
-        font-size: 16px;
+        font-size: 1.345rem;
         display: inline-block;
         cursor: pointer;
         position: relative;
-        color: var(--yellow-theme-main-color);
+        color: #fdfffc;
+        ;
         text-transform: uppercase;
         padding: 12px 20px;
-        overflow: hidden;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
         transition: 0.3s ease;
 
         &.active {
-          background: var(--yellow-theme-main-color);
-          color: var(--yellow-theme-background-color);
+          background: #088395;
           font-weight: 600;
           border-radius: 25px;
         }
       }
     }
+
     &__cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -36,7 +38,7 @@
       margin-top: 10px;
 
       &__item {
-        height: 366px;
+        height: 330px;
         cursor: pointer;
         position: relative;
 
@@ -59,6 +61,7 @@
             }
           }
         }
+
         .overlay {
           position: absolute;
           top: 0;
@@ -69,7 +72,8 @@
           width: 100%;
           opacity: 0;
           transition: 0.5s ease;
-          background-color: var(--yellow-theme-main-color);
+          background: #088395;
+          ;
 
           div {
             position: absolute;
@@ -79,27 +83,32 @@
             text-align: center;
 
             p {
-              color: #000000;
-              // color: var(--yellow-theme-sub-text-color);
+              color: #fdfffc;
               margin: 0;
-              font-size: 3.5rem;
+              font-size: 2.4345rem;
+              font-weight: 600;
               position: relative;
               overflow: hidden;
               white-space: nowrap;
+              font-family: "Open Sans", sans-serif;
               animation: typingEffect 1s steps(30, end);
             }
+
             button {
               cursor: pointer;
               margin-top: 16px;
               padding: 10px 70px;
               font-size: 2rem;
               background: transparent;
-              border: 1px solid #000;
+              border: 1px solid #37b7c3;
+              font-family: "Open Sans", sans-serif;
               border-radius: 5px;
               font-weight: 500;
+
               a {
                 text-decoration: none;
-                color: var(--yellow-theme-sub-text-color-color);
+                font-family: "Open Sans", sans-serif;
+                color: #fdfffc;
               }
             }
           }
@@ -108,29 +117,28 @@
     }
   }
 }
-@media only screen and (max-width: 480px) {
-  .portfolio__content__filter > li {
-    font-size: 11px;
-  }
-  .portfolio__content__cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .portfolio__content__filter > li {
-    font-size: 14px;
-  }
-  .portfolio__content__cards {
-    grid-template-columns: repeat(2, 1fr);
 
-    &__item {
-      .overlay {
-        div {
-          p {
-            font-size: 2.5rem;
-          }
-        }
-      }
+@media only screen and (max-width: 480px) {
+  .portfolio__content {
+    &__filter>li {
+      font-size: 13px;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .portfolio__content {
+    &__filter>li {
+      font-size: 10px;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -139,6 +147,7 @@
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }

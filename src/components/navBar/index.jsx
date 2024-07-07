@@ -37,7 +37,7 @@ const Navbar = () => {
     setToggleIcon(!toggleIcon);
   };
   return (
-    <div>
+
       <nav className="navbar">
         <div className="navbar__container">
           <a href="/" className="navbar__container__logo">
@@ -68,7 +68,6 @@ const Navbar = () => {
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
       </nav>
-    </div>
   );
 };
 export default Navbar;

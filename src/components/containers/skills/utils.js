@@ -1,27 +1,27 @@
 export const skillsData = [
   {
-    label: "FRONT END",
+    label: "FRONTEND",
     data: [
       {
         skillName: "HTML",
-        percentage: "90",
+        percentage: "95",
       },
       {
         skillName: "CSS",
-        percentage: "85",
+        percentage: "90",
       },
       {
         skillName: "Sass",
-        percentage: "80",
+        percentage: "85",
       },
       {
         skillName: "Bootstrap",
-        percentage: "85",
+        percentage: "90",
       },
     ],
   },
   {
-    label: "FRONT END",
+    label: "FRONTEND",
     data: [
       {
         skillName: "TAILWIND CSS",
@@ -29,15 +29,15 @@ export const skillsData = [
       },
       {
         skillName: "REACT-BOOTSTRAP",
-        percentage: "80",
+        percentage: "85",
       },
       {
         skillName: "JAVASCRIPT",
-        percentage: "75",
+        percentage: "85",
       },
       {
         skillName: "REACT JS",
-        percentage: "75",
+        percentage: "85",
       },
     ],
   },

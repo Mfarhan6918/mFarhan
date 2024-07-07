@@ -23,25 +23,28 @@
       animation: textAnimationTypingEffect 2.5s steps(30, end);
     }
   }
+
   &__contact-me {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 
     .btn {
-      padding:  0.857rem 2.571rem;
-      font-size: 2.2rem;
+      padding: 0.857rem 2.571rem;
+      font-size: 1.8rem;
       border-radius: 2.143rem;
-      font-weight: 600;
+      font-weight: bold;
       box-shadow: 0 0.5rem 1rem rgb(16, 16, 16);
-      outline: 2px solid #990033;
+      outline: 2px solid #37b7c3;
       outline-offset: 0px;
       border: none;
       cursor: pointer;
-      background: #800730;
+      background: #088395;
       color: #fdfffc;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
       text-decoration: none;
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
 
       &:hover {
         outline-offset: 0.7143rem;
@@ -49,28 +52,33 @@
     }
   }
 }
+
 @media only screen and (max-width: 550px) {
   .home__text-wrapper h1 {
     font-size: 3rem;
     line-height: 5rem;
   }
 }
+
 @media only screen and (min-width: 551px) and (max-width: 768px) {
   .home__text-wrapper h1 {
     font-size: 4rem;
     line-height: 6rem;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 990px) {
   .home__text-wrapper h1 {
     font-size: 6rem;
     line-height: 8rem;
   }
 }
+
 @keyframes textAnimationTypingEffect {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }

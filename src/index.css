@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-/* font-family: 'Roboto Slab', serif; */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
-/* font-family: 'Roboto Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,10 +7,10 @@
     scroll-behavior: smooth;
 }
 :root{
-    --yellow-theme-background-color:#561C24;
-    --yellow-theme-main-color:#FFE7E7;
+    --yellow-theme-background-color:#131842;
+    --yellow-theme-main-color:#fff9f9;
     --yellow-theme-sub-text-color:#EEF5FF;
-    --yellow-theme-nav-background-color:#6D2932;
+    --yellow-theme-nav-background-color:#131842;
 }
 html{
     font-size: 62.5%;

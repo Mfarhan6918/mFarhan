@@ -1,12 +1,13 @@
-.contact{
-    &__content{
+.contact {
+    &__content {
         padding: 20px;
 
-        &__header-text{
-            color: var(--yellow-theme-sub-text-color);
+        &__header-text {
+            color: var(--yellow-theme-main-color);
             display: inline-block;
-            font-size: 22px;
-            font-weight: 600;
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: "Open Sans", sans-serif;
             line-height: 1em;
             letter-spacing: 0.5px;
             position: relative;
@@ -16,7 +17,7 @@
         }
 
         &__header-text::before,
-        &__header-text::after{
+        &__header-text::after {
             position: absolute;
             content: "";
             width: 2px;
@@ -24,91 +25,163 @@
             background-color: var(--yellow-theme-main-color);
             bottom: -1px;
         }
-        &__header-text::before{
+
+        &__header-text::before {
             left: 0;
         }
-        &__header-text::after{
+
+        &__header-text::after {
             right: 0;
         }
-        &__form{
-            margin-top: 30px;
 
-            &__controlswrapper{
+        &__form {
+            margin-top: 30px;
+            text-align: center;
+
+            &__controlswrapper {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 40px;
+                gap: 30px;
                 margin-bottom: 30px;
 
-                div{
+                div {
                     position: relative;
+
                     .inputName,
-                    .inputEmail,
-                    .inputDescription{
+                    .inputCountry,
+                    .inputCity,
+                    .inputEmail {
                         width: 100%;
-                        border: 2px solid var(--yellow-theme-main-color);
-                        padding: 16px 12px;
-                        transition: 0.5s ease;
+                        border: 2px solid #088395;
+                        padding: 20px 12px;
                         position: relative;
                         background-color: transparent;
+                        font-size: 16px;
+                        font-family: "Open Sans", sans-serif;
                         color: var(--yellow-theme-sub-text-color);
+                        transition: 0.5s ease;
+
+                        &:hover {
+                            border: 2px solid #37b7c3;
+                        }
                     }
+
                     .nameLable,
+                    .countryLable,
+                    .cityLable,
                     .emailLable,
-                    .descriptionLable{
-                        font-weight: 500;
+                    .descriptionLable {
+                        font-weight: 600;
                         position: absolute;
-                        top: 7px;
+                        top: 2px;
                         left: 12px;
                         transition: 0.2s ease;
                         color: var(--yellow-theme-sub-text-color);
-                        font-style: 16px;
+                        font-size: 14px;
+                        font-family: "Open Sans", sans-serif;
                     }
+
                     .inputName:focus,
+                    .inputCountry:focus,
+                    .inputCity:focus,
                     .inputEmail:focus,
-                    .inputDescription:focus{
+                    .inputDescription:focus {
                         outline: none;
                     }
-                    .inputName:focus + .nameLable,
+
+                    .inputName:focus+.nameLable,
                     // .inputName:valid + .nameLable,
-                    .inputEmail:focus + .emailLable,
+                    .inputCountry:focus+.countryLable,
+                    // .inputName:valid + .nameLable,
+                    .inputCity:focus+.cityLable,
+                    // .inputName:valid + .nameLable,
+                    .inputEmail:focus+.emailLable,
                     // .inputEmail:valid + .emailLable,
-                    .inputDescription:focus + .descriptionLable
-                    // .inputDescription:valid + .descriptionLable
-                    {
+                    .inputDescription:focus+.descriptionLable // .inputDescription:valid + .descriptionLable
+
+                        {
                         font-size: 18px;
                         top: -25px;
                         left: 0px;
                     }
                 }
             }
+
+            div {
+                position: relative;
+
+                .inputDescription {
+                    width: 100%;
+                    border: 2px solid #088395;
+                    padding: 16px 12px;
+                    transition: 0.5s ease;
+                    position: relative;
+                    background-color: transparent;
+                    font-family: "Open Sans", sans-serif;
+                    color: var(--yellow-theme-sub-text-color);
+                    font-size: 16px;
+                    margin-bottom: 40px;
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        border: 2px solid #37b7c3;
+                    }
+                }
+
+                .descriptionLable {
+                    font-weight: 500;
+                    position: absolute;
+                    top: 2px;
+                    left: 12px;
+                    color: var(--yellow-theme-sub-text-color);
+                    font-size: 12px;
+                    font-family: "Open Sans", sans-serif;
+                    transition: 0.2s ease;
+                }
+
+                .inputDescription:focus {
+                    outline: none;
+                }
+                .inputDescription:focus+.descriptionLable 
+                // .inputDescription:valid + .descriptionLable
+                    {
+                    font-size: 18px;
+                    top: -25px;
+                    left: 0px;
+                }
+            }
         }
+
         .btn {
-            padding:  0.857rem 2.571rem;
-            font-size: 2.2rem;
+            padding: 0.857rem 2.571rem;
+            font-size: 1.8rem;
             border-radius: 2.143rem;
-            font-weight: 600;
+            font-weight: bold;
             box-shadow: 0 0.5rem 1rem rgb(16, 16, 16);
-            outline: 2px solid #990033;
+            outline: 2px solid #37b7c3;
             outline-offset: 0px;
             border: none;
             cursor: pointer;
-            background: #800730;
+            background: #088395;
             color: #fdfffc;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
             text-decoration: none;
-            transition: .3s ease-in-out;
-      
+            transition: 0.3s ease-in-out;
+
             &:hover {
-              outline-offset: 0.7143rem;
+                outline-offset: 0.7143rem;
             }
         }
     }
 }
-// @media only screen and (max-width: 768px) {
-//     .contact__content__form{
-//         text-align: center;
 
-//         &__controlswrapper{
-//             grid-template-columns: repeat(1, 1fr);
-//         }
-//     }
-// }
+@media only screen and (max-width: 425px) {
+    .contact__content__form {
+        text-align: center;
+
+        &__controlswrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

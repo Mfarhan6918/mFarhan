@@ -25,8 +25,7 @@ const Skills = () => {
               }}
               end={{
                 transform: "translateX(0px)",
-              }}
-            >
+              }}>
               <h3 className="skills__content-wrapper__inner-content__category-text">
                 {item.label}
               </h3>
@@ -36,15 +35,14 @@ const Skills = () => {
                     play
                     duration={3}
                     keyframes={["opacity: 1", "opacity: 0"]}
-                    iterationCount="1"
-                  >
+                    iterationCount="1">
                     <div className="progressbar-wrapper" key={j}>
                       <p>{skillItem.skillName}</p>
                       <Line
                         percent={skillItem.percentage}
-                        strokeWidth="2"
-                        strokeColor="var(--yellow-theme-main-color)"
-                        trailWidth="2"
+                        strokeWidth="2.5"
+                        strokeColor="#088395"
+                        trailWidth="2.5"
                         strokeLinecap="round"
                       />
                     </div>

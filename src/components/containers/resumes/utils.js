@@ -3,19 +3,19 @@ export const data = {
     {
       title: "Freelancing,",
       subTitle: "Multan, Pakistan",
-      description: "Front End Developer (React js)",
+      description: "Frontend Developer (React js)",
       date: "2024 - Present"
     },
     {
       title: "Access Group of Technology, ",
       subTitle: "Lahore, Pakistan",
-      description: "Junior Front End Developer",
+      description: "Junior Frontend Developer",
       date: "May-2023 to Nov-2023"
     },
     {
       title: "Codec Technology",
       subTitle: "Lahore, Pakistan",
-      description: "Internship as a Front End Developer",
+      description: "Frontend Developer Interne",
       date: "Feb-2023 to April-2023"
     },
   ],
